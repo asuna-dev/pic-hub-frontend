@@ -85,6 +85,7 @@ const fetchSpaceDetail = async () => {
     })
     if (res.data.code === 0 && res.data.data) {
       space.value = res.data.data
+      console.log("space", space.value)
     } else {
       message.error('获取空间详情失败，' + res.data.message)
     }

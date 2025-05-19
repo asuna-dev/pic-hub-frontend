@@ -13,13 +13,13 @@
         <a-menu v-model:selectedKeys="current" mode="horizontal" :items="items" @click="doMenuClick" />
       </a-col>
       <!-- 用户信息展示栏 -->
-      <a-col flex="220px">
+      <a-col>
         <div class="user-login-status">
           <div v-if="loginUserStore.loginUser.id">
             <a-dropdown>
               <a-space>
                 <a-avatar :src="loginUserStore.loginUser.userAvatar" />
-                {{ loginUserStore.loginUser.userName ?? '无名' }}{{ '::' + loginUserStore.loginUser.id }}
+                {{ loginUserStore.loginUser.userName ?? '无名' }}
               </a-space>
               <template #overlay>
                 <a-menu>

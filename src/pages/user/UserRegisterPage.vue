@@ -6,9 +6,9 @@
       <a-form-item name="userAccount" :rules="[{ required: true, message: '请输入账号' }]">
         <a-input v-model:value="formState.userAccount" placeholder="请输入账号" />
       </a-form-item>
-      <a-form-item name="userName" :rules="[{ required: true, message: '请输入昵称' }]">
+      <!-- <a-form-item name="userName" :rules="[{ required: true, message: '请输入昵称' }]">
         <a-input v-model:value="formState.userName" placeholder="请输入昵称" />
-      </a-form-item>
+      </a-form-item> -->
       <a-form-item name="userPassword" :rules="[
         { required: true, message: '请输入密码' },
         { min: 8, message: '密码长度不能小于 8 位' },
@@ -40,7 +40,7 @@ import router from '@/router' // 用于接受表单输入的值
 
 // 用于接受表单输入的值
 const formState = reactive<API.UserRegisterRequest>({
-  userName: '',
+  // userName: '',
   userAccount: '',
   userPassword: '',
   checkPassword: '',

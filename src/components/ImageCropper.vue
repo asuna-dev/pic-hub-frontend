@@ -48,7 +48,8 @@ const props = defineProps<Props>()
 
 // 是否为团队空间
 const isTeamSpace = computed(() => {
-  return props.space?.spaceType === SPACE_TYPE_ENUM.TEAM
+  return true
+  // return props.space?.spaceType === SPACE_TYPE_ENUM.TEAM
 })
 
 // 获取图片裁切器的引用
