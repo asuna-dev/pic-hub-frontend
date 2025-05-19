@@ -1,4 +1,4 @@
-# yu-picture-frontend
+# pic-hub-frontend
 
 ## Build
 
